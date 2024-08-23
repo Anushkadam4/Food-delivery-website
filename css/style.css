@@ -1,0 +1,152 @@
+/* CSS Reset */
+*{margin:0;
+padding:0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation Bar: Logo and Image */
+
+#logo{
+    margin: 34px 38px;
+    
+}
+
+#logo img{
+    margin: 20px 34px;
+    height: 60px;
+}
+
+
+/*Navigation Bar: List Styling */
+
+#navbar{
+    position: relative;
+}
+
+ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+
+#navbar::before{
+    content:"" ;
+    background-color: rgba(0, 0, 0, 0.416);
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity:0.;
+
+}
+
+ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+
+}
+
+#home::before{
+    content:"" ;
+    background: url('../spices-4185324_1280.jpg') no-repeat center center;
+    height:40%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity:0.85;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+}
+
+/*Services section*/
+#services{
+    margin: 25px;
+    display: flex;
+}
+
+.box{
+    border: 3px solid #a5372a;
+    text-align: center;
+    padding: 36px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: rgb(186 43 143 / 11%);
+} 
+
+.box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+
+
+
+/*Utility Classes*/
+.h-primary{
+    font-size: 30px;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:brown ;
+    color: white;
+margin: 15px;
+border-radius: 12px;
+cursor: pointer;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+
+
